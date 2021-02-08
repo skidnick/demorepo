@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+   <head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+     <script src="game.js"></script>
+	 
+	</head>
+	
+	<body>	
+	Time remaining:
+      <span id = "timer"> 60s</span><br/>
+     Score:
+       <span id="score">0</span><br/>
+  		
+		Users:
+       <span id="user">allUsers</span><br/>
+	   
+	   <button onclick="play()" id="play">Click</button>
+	   <button onclick="location.href = './login.html';" id="logout">Logout</button>
+	   
+	   <br/>
+			   	
+	<h2>Leaderboard</h2>
+		
+		
+<table>
+<thead>
+                  <tr>
+                    <td >Username</td>
+                    <td >Score</td>
+
+                  </tr>
+</thead>
+<tbody id="cool">
+</tbody>
+</table>
+
+	</body>
+    </html>
